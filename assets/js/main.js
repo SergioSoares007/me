@@ -34,6 +34,7 @@
 			.on('click', function(e) {
 
 				var $this = $(this);
+				
 
 				// External link? Bail.
 					if ($this.attr('href').charAt(0) != '#')
@@ -44,7 +45,8 @@
 
 				// Deactivate all links.
 					$nav_a.removeClass('active');
-
+					$nav_a.addClass('active-locked');
+					
 				// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
 					$this
 						.addClass('active')
@@ -56,6 +58,8 @@
 				var	$this = $(this),
 					id = $this.attr('href'),
 					$section = $(id);
+				
+					
 
 				// No section for this link? Bail.
 					if ($section.length < 1)
