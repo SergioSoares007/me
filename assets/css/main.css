@@ -2258,8 +2258,16 @@ input, select, textarea {
 			#main > section.three {
 				background-color: #ecf1f1;
 			}
-
+			
 			#main > section.four {
+				background-color: #ecf1f2;
+			}
+			
+			#main > section.five {
+				background-color: #ecf1f3;
+			}
+
+			#main > section.six {
 				background-color: #e8edec;
 			}
 
